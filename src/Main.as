@@ -123,7 +123,7 @@ void Render() {
         flags |= UI::WindowFlags::NoMove;
     }
 
-    if (UI::Begin(pluginTitle, S_Enabled, flags)) {
+    if (UI::Begin(pluginTitle + "###bestinclass", S_Enabled, flags)) {
         UI::Text(pluginColor + pluginIcon + "\\$G " + (pb != maxUint ? Time::Format(pb) : "-:--.---"));
     }
     UI::End();
