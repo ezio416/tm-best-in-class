@@ -103,10 +103,19 @@ void Main() {
 void Render() {
     if (false
         or !S_Enabled
-        or (S_HideWithGame and !UI::IsGameUIVisible())
-        or (S_HideWithOP and !UI::IsOverlayShown())
+        or (true
+            and S_HideWithGame
+            and !UI::IsGameUIVisible()
+        )
+        or (true
+            and S_HideWithOP
+            and !UI::IsOverlayShown()
+        )
         or !InMap()
-        or (S_OnlyShowInSchool and !InSchool())
+        or (true
+            and S_OnlyShowInSchool
+            and !InSchool()
+        )
     ) {
         return;
     }
