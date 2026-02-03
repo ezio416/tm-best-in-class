@@ -1,6 +1,3 @@
-// c 2025-05-17
-// m 2025-05-17
-
 uint GetLocalPB() {
     auto App = cast<CTrackMania>(GetApp());
 

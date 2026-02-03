@@ -1,6 +1,3 @@
-// c 2025-05-16
-// m 2025-05-18
-
 Json::Value@  currentMap;
 bool          handledFinish = false;
 const uint    maxUint       = uint(-1);

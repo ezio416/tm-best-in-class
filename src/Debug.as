@@ -1,6 +1,3 @@
-// c 2025-05-17
-// m 2025-05-17
-
 [SettingsTab name="Debug" icon="Bug"]
 void RenderDebug() {
     if (UI::BeginTable("##table-debug", 2, UI::TableFlags::RowBg)) {
